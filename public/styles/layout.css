@@ -1,0 +1,8 @@
+.proof {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#ee2a6b, #47d0db);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
