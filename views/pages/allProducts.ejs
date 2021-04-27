@@ -9,11 +9,11 @@
   </head>
   <body>
     <%- include('../partials/header') %>
-    <main>
+    <main class="after-search-grid">
       <% data.forEach(element => { %>
       <div>
         <h3><%= element.name %></h3>
-        <p><%= element.price %></p>
+        <p class="price"><%= element.price %></p>
         <img src="<%= element.image %>" alt="<%= element.name %>" />
         <p><%= element.description %></p>
         <form action="/add" method="POST">

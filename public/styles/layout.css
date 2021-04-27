@@ -86,3 +86,7 @@ header nav a {
 .after-search-grid div h3 {
   color: #ee2a6b;
 }
+.price {
+  color: gold;
+  font-size: 18px;
+}
