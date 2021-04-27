@@ -6,3 +6,83 @@
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+  padding: 0px 50px;
+}
+header nav {
+  display: flex;
+  gap: 15px;
+}
+header nav a {
+  color: #1d3039;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header nav a:hover {
+  color: #ee2a6b;
+}
+.header div h2 {
+  color: #ee2a6b;
+  font-size: 32px;
+}
+.index--hero {
+  background-image: url('../assets/hero.jpg');
+  height: calc(100vh - 75px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home--form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+.home--form input {
+  height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.home--form label {
+  color: #1d3039;
+}
+.home--form button {
+  width: 80px;
+  height: 30px;
+  align-self: flex-end;
+  border-radius: 10px;
+  background-color: #1d3039;
+  border: none;
+  color: azure;
+  cursor: pointer;
+}
+
+.after-search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  grid-template-rows: auto;
+  border-top: #1d3039 1px solid;
+  padding: 50px 20px;
+}
+.after-search-grid div {
+  border: 1px solid #1d3039;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: inset -9px -9px 18px #bebebe, inset 9px 9px 18px #ffffff;
+}
+.after-search-grid div h3 {
+  color: #ee2a6b;
+}

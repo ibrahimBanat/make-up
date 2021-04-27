@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <% if (data.length) { %> <% data.forEach(element => { %>
+      <div>
+        <img src="<%= element.image %>" alt="" />
+        <h3><%= element.name %></h3>
+        <p><%= element.price %></p>
+        <form action="/details/<%= element.id %>" method="POST">
+          <button>VIEW DETAILS</button>
+        </form>
+      </div>
+      <% }) %> <% } else{ %>
+      <h2>NO products in your card</h2>
+      <% } %>
+    </main>
+  </body>
+</html>

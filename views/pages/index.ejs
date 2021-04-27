@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <%- include('../partials/header') %>
+
+    <main class="index--hero">
+      <form action="/productByPrice" method="POST" class="home--form">
+        <label for="brand">brand name</label>
+        <input type="text" name="brand" id="brand" />
+        <label for="bot">from</label>
+        <input type="text" name="bot" id="bot" />
+        <label for="top">to</label>
+        <input type="text" name="top" id="top" />
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
